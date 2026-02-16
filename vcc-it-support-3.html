@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: VCC Infrastructure Modernization | Jordan Graham</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root { --vcc-blue: #1e3799; --vcc-gold: #f1c40f; --accent-light: #f8f9fa; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background-color: #ffffff; color: #2d3436; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, var(--vcc-blue) 0%, #0c2461 100%); color: white; padding: 100px 0 60px 0; }
+        .badge-tech { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 0.5rem 1rem; border-radius: 50px; font-weight: 500; font-size: 0.85rem; }
+        .section-title { font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: var(--vcc-blue); border-left: 5px solid var(--vcc-gold); padding-left: 15px; margin-bottom: 30px; }
+        .logic-card { border: none; border-radius: 12px; background: var(--accent-light); transition: all 0.3s ease; height: 100%; }
+        .logic-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .icon-box { width: 50px; height: 50px; background: var(--vcc-blue); color: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 1.5rem; }
+        .problem-alert { border-left: 4px solid #e74c3c; background: #fff5f5; padding: 1rem; margin-bottom: 1.5rem; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">JORDAN GRAHAM</a>
+        <a href="index.html" class="btn btn-outline-light btn-sm">← Back to Portfolio</a>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="container text-center">
+        <h1 class="display-3 fw-bold mb-3">Victory Christian Centre</h1>
+        <p class="lead mb-4">Systems Administrator & Infrastructure Lead</p>
+        <div class="d-flex justify-content-center gap-2 flex-wrap">
+            <span class="badge-tech">Cloud VoIP / SIP</span>
+            <span class="badge-tech">UniFi SDN</span>
+            <span class="badge-tech">Microsoft 365</span>
+            <span class="badge-tech">Structured Cabling</span>
+            <span class="badge-tech">Live Broadcast</span>
+        </div>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row mb-5">
+        <div class="col-lg-8">
+            <h2 class="section-title">Network Backbone & TCO Strategy</h2>
+            <div class="problem-alert text-danger">
+                <i class="bi bi-speedometer2 me-2"></i> <strong>The Bottleneck:</strong> Identified a legacy 100Mbps Fast Ethernet switch on Day One that was throttling the entire office campus.
+            </div>
+            <p class="fs-5">
+                I standardized the campus on a modern <strong>UniFi ecosystem</strong>. I chose to stick with UniFi specifically because it allowed for a "Single Umbrella" management style with <strong>zero ongoing subscription costs</strong>, protecting the Trust from the annual "hardware tax" common in enterprise networking.
+            </p>
+            <ul class="mt-3">
+                <li>Established a <strong>1000Mbps Gigabit backbone</strong>, increasing throughput by 10x.</li>
+                <li>Decommissioned fragmented legacy gear in favor of a <strong>UniFi UDM-SE</strong> and PoE Switching.</li>
+                <li>Restored structured cabling in secondary buildings, terminating into a new 24-port patch panel.</li>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <div class="card p-4 bg-light border-0 shadow-sm">
+                <h6 class="fw-bold text-uppercase small mb-3">Operational Wins</h6>
+                <ul class="list-unstyled small mb-0">
+                    <li class="mb-2 text-success"><i class="bi bi-check2-circle me-2"></i> 10x Network Speed Increase</li>
+                    <li class="mb-2 text-success"><i class="bi bi-check2-circle me-2"></i> $0 Annual Hardware Subscriptions</li>
+                    <li class="mb-2 text-success"><i class="bi bi-check2-circle me-2"></i> Restored Reception-to-Accounts Link</li>
+                    <li class="text-success"><i class="bi bi-check2-circle me-2"></i> 100% Mobile Workforce Ready</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="section-title">Cloud VoIP & Communication Logic</h3>
+    <div class="row g-4 mb-5">
+        <div class="col-md-6">
+            <div class="card logic-card p-4">
+                <div class="icon-box"><i class="bi bi-telephone-x"></i></div>
+                <div class="problem-alert text-danger small">
+                    <strong>The Failure:</strong> Circular transfer loops meant Reception could not call the Accounts office due to "Shared Extension" collisions.
+                </div>
+                <h5 class="fw-bold">1:1 Extension Provisioning</h5>
+                <p class="small">Migrated the organization to a Cloud PBX with <strong>unlimited extensions</strong> for just $5/mo extra. Every staff member was given a unique digital identity, finally allowing seamless internal transfers and direct-dialing.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card logic-card p-4">
+                <div class="icon-box"><i class="bi bi-headset"></i></div>
+                <div class="problem-alert text-danger small">
+                    <strong>The Frustration:</strong> Legacy cordless phones were causing dropped calls due to failing batteries and poor range.
+                </div>
+                <h5 class="fw-bold">Softphone & Headset Migration</h5>
+                <p class="small">Eliminated physical technical debt by decommissioning all cordless phones. Transitioned the office to <strong>USB/Bluetooth headsets and softphone apps</strong>, ensuring reliability and allowing staff to take calls from any laptop.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+        <div class="col-md-12">
+            <div class="card logic-card p-4 border-start border-4 border-primary">
+                <h5 class="fw-bold"><i class="bi bi-robot me-2"></i> Automation: Auto Attendant & Fail-Safe Queues</h5>
+                <p>To reduce the administrative burden on reception, I engineered a logic-driven <strong>Auto Attendant (IVR)</strong>. Callers can now select their destination (e.g., "Press 1 for Accounts"). I implemented a <strong>Fail-Safe Queue</strong> so if no option is selected, the system "blasts" all office phones, ensuring no call is ever abandoned.</p>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="section-title">Identity & Data Sovereignty</h3>
+    <div class="row g-4 mb-5">
+        <div class="col-md-6">
+            <div class="card logic-card p-4">
+                <div class="icon-box"><i class="bi bi-person-lock"></i></div>
+                <h5 class="fw-bold">Entra ID & MFA</h5>
+                <p class="small">Replaced fragmented local accounts with centralized <strong>Microsoft Entra ID</strong>. Enabled Single Sign-On (SSO) and enforced MFA, securing the organization's digital perimeter.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card logic-card p-4">
+                <div class="icon-box"><i class="bi bi-cloud-check"></i></div>
+                <h5 class="fw-bold">SharePoint Governance</h5>
+                <p class="small">Moved the "Server" from a personal OneDrive to <strong>SharePoint Online</strong>. Implemented Role-Based Access Control (RBAC) to ensure departmental data remained secure yet accessible.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <h4 class="fw-bold mb-4">Technical Stack utilized at VCC</h4>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <span class="badge bg-secondary p-2 px-3">UniFi UDM-SE</span>
+                <span class="badge bg-secondary p-2 px-3">SIP / VoIP</span>
+                <span class="badge bg-secondary p-2 px-3">IVR Logic</span>
+                <span class="badge bg-secondary p-2 px-3">Entra ID</span>
+                <span class="badge bg-secondary p-2 px-3">SharePoint Online</span>
+                <span class="badge bg-secondary p-2 px-3">Structured Cabling</span>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="py-5 bg-dark text-white text-center mt-5">
+    <div class="container">
+        <p class="mb-0">Jordan Graham | Portfolio 2026</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
