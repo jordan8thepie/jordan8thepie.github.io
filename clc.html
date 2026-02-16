@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLC Project Case Study | Jordan Graham</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; color: #2d3436; }
+        .hero-banner { background: #003366; color: white; padding: 100px 0; position: relative; overflow: hidden; }
+        .hero-banner::after { content: "<?php CodeIgniter ?>"; position: absolute; right: -50px; bottom: 20px; font-family: 'JetBrains Mono'; font-size: 8rem; opacity: 0.05; }
+        .tech-pill { border: 1px solid #ffc107; color: #ffc107; padding: 5px 15px; border-radius: 4px; font-weight: bold; font-size: 0.85rem; }
+        .section-header { border-bottom: 3px solid #003366; display: inline-block; padding-bottom: 5px; margin-bottom: 30px; }
+        .logic-card { background: #fff; border: 1px solid #e9ecef; border-left: 5px solid #ffc107; transition: transform 0.2s; }
+        .logic-card:hover { transform: scale(1.02); }
+        .code-snippet { background: #2d3436; color: #f8f9fa; padding: 20px; border-radius: 8px; font-family: 'JetBrains Mono'; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">JORDAN GRAHAM</a>
+            <div class="ms-auto"><a href="index.html" class="btn btn-outline-light btn-sm">← Other Projects</a></div>
+        </div>
+    </nav>
+
+    <header class="hero-banner text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Computer Learning Centre</h1>
+            <p class="lead mb-4">Engineering a Scalable Training Platform with CodeIgniter v3</p>
+            <div class="d-flex justify-content-center gap-3">
+                <span class="tech-pill">PHP 7.x</span>
+                <span class="tech-pill">CodeIgniter MVC</span>
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">UI/UX Redesign</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5 py-5">
+    <div class="row g-5">
+        <div class="col-lg-8">
+            <h2 class="section-header">Dual-Impact: Training Coordination & Engineering</h2>
+            <p class="fs-5">
+                My work with the <strong>Computer Learning Centre</strong> was unique. I didn't just build the platform; I served as the <strong>Training Coordinator</strong>. This allowed me to identify operational friction points firsthand and solve them through code.
+            </p>
+
+            <div class="card logic-card p-4 my-4">
+                <h5 class="fw-bold text-primary">Operational Strategy Meets Code</h5>
+                <p>As the Coordinator, I managed course schedules, student enrollments, and corporate client relations. I utilized this insight to:</p>
+                <ul>
+                    <li><strong>Extend Site Logic:</strong> Built the functionality I needed to manage bookings more efficiently.</li>
+                    <li><strong>User Journey Optimization:</strong> Redesigned the site specifically to answer the most common questions students had when calling the office.</li>
+                    <li><strong>Functional Scalability:</strong> Ensured the CodeIgniter framework could handle the specific logistics of 3-hour fast-paced courses.</li>
+                </ul>
+            </div>
+
+            <h3 class="mt-5 mb-4">The Logic Layer</h3>
+            <p>I utilized the <strong>Model-View-Controller (MVC)</strong> pattern in CodeIgniter v3 to ensure that the complex logic of managing multiple locations and course types remained organized and easy to update.</p>
+            
+            <div class="code-snippet shadow mt-4">
+                <span class="text-info">// Handling logic for coordinate course schedules</span><br>
+                <span class="text-warning">public function</span> <span class="text-success">update_training_schedule</span>($course_id) {<br>
+                &nbsp;&nbsp;<span class="text-info">// Logic developed from coordinator-level requirements</span><br>
+                &nbsp;&nbsp;$this->db->where('id', $course_id);<br>
+                &nbsp;&nbsp;$this->db->update('courses', $post_data);<br>
+                }
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card shadow-sm border-0 p-4 bg-light mb-4">
+                <h5 class="fw-bold">Professional Profile</h5>
+                <hr>
+                <p><strong>Primary Role:</strong> Training Coordinator</p>
+                <p><strong>Technical Role:</strong> Full-Stack Developer</p>
+                <p><strong>Framework:</strong> CodeIgniter v3</p>
+                <p><strong>Impact:</strong> 100% Redesign & System Extension</p>
+                <hr>
+                <p class="small italic text-muted">"By acting as both the end-user (Coordinator) and the creator (Developer), I built a platform that truly serves the business's operational needs."</p>
+                <a href="https://computerlearningcentre.co.nz" class="btn btn-primary w-100 mt-2">Visit Live Site</a>
+            </div>
+
+            <div class="card shadow-sm border-0 p-4 bg-white border-top border-4 border-success mb-4">
+                <h6 class="fw-bold text-success mb-3">Group Training & Facilitation</h6>
+                <p class="small text-muted">Assisted with technical training for <strong>large corporate groups</strong>, providing hands-on support and troubleshooting during live sessions.</p>
+                
+                <h6 class="fw-bold mt-4 mb-2 small text-uppercase">Training Topics</h6>
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2"><span class="badge bg-info text-dark me-1">OS</span> Windows XP, 7 & 10</li>
+                    <li class="mb-2"><span class="badge bg-primary me-1">App</span> Microsoft Word</li>
+                    <li class="mb-2"><span class="badge bg-success me-1">App</span> Microsoft Excel</li>
+                    <li class="mb-2"><span class="badge bg-danger me-1">App</span> Microsoft PowerPoint</li>
+                    <li class="mb-0"><span class="badge bg-primary me-1">App</span> Microsoft Outlook</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer class="py-5 bg-dark text-white text-center">
+        <p class="small mb-0">Developed by Jordan Graham | 2026 Portfolio</p>
+    </footer>
+
+</body>
+</html>

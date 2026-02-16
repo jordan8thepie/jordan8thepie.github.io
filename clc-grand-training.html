@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: CLC & Grand Training | Jordan Graham</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; color: #2d3436; }
+        .hero-banner { background: linear-gradient(135deg, #003366 0%, #d63031 100%); color: white; padding: 80px 0; }
+        .tech-pill { border: 1px solid rgba(255,255,255,0.5); background: rgba(255,255,255,0.1); color: white; padding: 5px 12px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
+        .section-header { border-bottom: 3px solid #003366; display: inline-block; padding-bottom: 5px; margin-bottom: 30px; font-weight: 700; }
+        .logic-card { background: #fff; border-radius: 8px; border: 1px solid #e9ecef; border-left: 5px solid #003366; transition: transform 0.2s; }
+        .brand-badge-clc { background: #003366; color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; }
+        .brand-badge-gt { background: #d63031; color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; }
+        .code-snippet { background: #2d3436; color: #f8f9fa; padding: 20px; border-radius: 8px; font-family: 'JetBrains Mono'; font-size: 0.85rem; overflow-x: auto; }
+        .year-badge { background: #ffc107; color: #000; font-weight: bold; padding: 2px 8px; border-radius: 4px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">JORDAN GRAHAM</a>
+            <a href="index.html" class="btn btn-outline-light btn-sm">← Back to Portfolio</a>
+        </div>
+    </nav>
+
+    <header class="hero-banner text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Grand Training & Computer Learning Centre</h1>
+            <p class="lead mb-4">Lead Technical Operations & Training Coordination <span class="year-badge">2024 - 2025</span></p>
+            <div class="d-flex justify-content-center gap-2 flex-wrap">
+                <span class="tech-pill">CodeIgniter 3</span>
+                <span class="tech-pill">Bootstrap 5</span>
+                <span class="tech-pill">Training Coordination</span>
+                <span class="tech-pill">IT Support</span>
+                <span class="tech-pill">Windows OS Specialist</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                
+                <h2 class="section-header">Operational Leadership & Modernization</h2>
+                <p class="fs-5">
+                    From <strong>2023 to 2025</strong>, I served as the <strong>Training Coordinator</strong> for both Computer Learning Centre and Grand Training Limited. This dual-brand leadership role required balancing the complex scheduling of corporate adult education with high-volume youth workshops.
+                </p>
+
+                <div class="card logic-card p-4 my-4 shadow-sm">
+                    <h5 class="fw-bold text-primary">The 2024 Digital Transformation</h5>
+                    <p>Parallel to my coordination duties, I spearheaded the 2024 modernization of the company's digital infrastructure. Rather than starting from scratch, I performed a <strong>comprehensive visual and functional overhaul</strong> of the existing 2015 platform. Working within the established <strong>CodeIgniter 3</strong> framework, I migrated the frontend to <strong>Bootstrap 5</strong> to achieve a mobile-responsive "2024 look" and engineered new backend features to expand the system's capabilities.</p>
+                    <ul class="small">
+                        <li><strong>UI Refresh:</strong> Replaced the dated 2015 interface with a streamlined, high-productivity layout.</li>
+                        <li><strong>New Functionality:</strong> Integrated custom tools into the CodeIgniter core to automate repetitive coordination tasks.</li>
+                        <li><strong>Data Visibility:</strong> Improved the reporting views to make managing corporate enrollments and course schedules faster and more intuitive.</li>
+                    </ul>
+                </div>
+
+                <h3 class="fw-bold mt-5 mb-3">On-Premise IT Support & Tutoring</h3>
+                <p>Maintaining the physical training environment was central to my role. I provided <strong>on-premise IT Support</strong>, managing hardware labs and network stability. My deep product knowledge allowed me to transition seamlessly into instruction:</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-3">
+                        <div class="p-3 border rounded bg-light border-start border-4 border-danger">
+                            <span class="brand-badge-gt">Grand Training</span>
+                            <h6 class="fw-bold mt-2">Lead Tutor</h6>
+                            <p class="small mb-0">Delivering coding and tech workshops to ages 5-17 (School Holidays & Saturdays).</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="p-3 border rounded bg-light border-start border-4 border-primary">
+                            <span class="brand-badge-clc">CLC</span>
+                            <h6 class="fw-bold mt-2">Assistant Tutor</h6>
+                            <p class="small mb-0">Supporting corporate and business learners in professional software suites.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="fw-bold mt-5 mb-3">Architecture & Technical Logic</h3>
+                <p class="small text-muted">A sample of the CI3 logic used to manage brand-specific course data within a unified database.</p>
+                <div class="code-snippet shadow">
+                    <span class="text-info">// Handling precise scheduling for 2024-2025 term cycles</span><br>
+                    <span class="text-warning">public function</span> <span class="text-success">get_schedule</span>($brand_id) {<br>
+                    &nbsp;&nbsp;$this->db->where('brand_id', $brand_id);<br>
+                    &nbsp;&nbsp;$this->db->order_by('start_date', 'ASC');<br>
+                    &nbsp;&nbsp;return $this->db->get('training_sessions')->result();<br>
+                    }
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card shadow-sm border-0 p-4 bg-light sticky-top" style="top: 100px;">
+                    <h5 class="fw-bold">Tenure Highlights</h5>
+                    <hr>
+                    <p class="mb-2"><strong>Period:</strong> 2024 — 2025</p>
+                    <p class="mb-2"><strong>Role:</strong> Training Coordinator</p>
+                    <p class="mb-2"><strong>Infrastructure:</strong> IT Support Lead</p>
+                    <p class="mb-4"><strong>Dev Stack:</strong> CI3 / Bootstrap 5</p>
+                    
+                    <h6 class="fw-bold small text-uppercase text-muted">Software Expertise</h6>
+                    <div class="d-flex flex-wrap gap-2 mt-2 mb-4">
+                        <span class="badge bg-secondary">Windows</span>
+                        <span class="badge bg-success">Excel</span>
+                        <span class="badge bg-primary">Word</span>
+                        <span class="badge bg-danger">PowerPoint</span>
+                        <span class="badge bg-primary">Outlook</span>
+                    </div>
+
+                    <p class="small italic text-muted border-top pt-3">
+                        "During my time as Coordinator, I ensured that the technical backbone of the company was as reliable and modern as the curriculum we delivered."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-1">Jordan Graham | Portfolio 2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>

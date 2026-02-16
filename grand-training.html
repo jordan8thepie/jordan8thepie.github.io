@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Training Case Study | Jordan Graham</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; color: #2d3436; }
+        .hero-banner { background: #d63031; color: white; padding: 100px 0; position: relative; overflow: hidden; }
+        .hero-banner::after { content: "Bootstrap 5"; position: absolute; right: -20px; bottom: 10px; font-family: 'JetBrains Mono'; font-size: 6rem; opacity: 0.1; }
+        .tech-pill { border: 1px solid #ffffff; color: #ffffff; padding: 5px 15px; border-radius: 4px; font-weight: bold; font-size: 0.85rem; }
+        .section-header { border-bottom: 3px solid #d63031; display: inline-block; padding-bottom: 5px; margin-bottom: 30px; }
+        .logic-card { background: #fff; border: 1px solid #e9ecef; border-left: 5px solid #d63031; transition: transform 0.2s; }
+        .logic-card:hover { transform: scale(1.01); }
+        .code-snippet { background: #2d3436; color: #f8f9fa; padding: 20px; border-radius: 8px; font-family: 'JetBrains Mono'; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">JORDAN GRAHAM</a>
+            <div class="ms-auto"><a href="index.html" class="btn btn-outline-light btn-sm">← Other Projects</a></div>
+        </div>
+    </nav>
+
+    <header class="hero-banner text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Grand Training</h1>
+            <p class="lead mb-4">Modernizing IT Education Platforms for 2024</p>
+            <div class="d-flex justify-content-center gap-3">
+                <span class="tech-pill">Bootstrap 5</span>
+                <span class="tech-pill">CodeIgniter 3</span>
+                <span class="tech-pill">IT Support</span>
+                <span class="tech-pill">Tutoring</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5 py-5">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <h2 class="section-header">The 2024 Modernization Project</h2>
+                <p class="fs-5">
+                    For <strong>Grand Training</strong>, I was tasked with a complete frontend overhaul and backend optimization. By migrating the legacy design to <strong>Bootstrap 5</strong>, I brought the platform up to 2024 standards—improving mobile responsiveness, accessibility, and user engagement.
+                </p>
+
+                <div class="card logic-card p-4 my-4">
+                    <h5 class="fw-bold text-danger">Architectural Scaling</h5>
+                    <p>I utilized a modified version of the <strong>Computer Learning Centre</strong> codebase, adapting the core CodeIgniter 3 framework to meet Grand Training's specific brand identity and course structure. This involved:</p>
+                    <ul>
+                        <li><strong>UI Modernization:</strong> Implementing a clean, grid-based layout using the latest Bootstrap 5 components.</li>
+                        <li><strong>Backend Refinement:</strong> Customizing the CI3 controllers and models to handle unique Grand Training curriculum data.</li>
+                        <li><strong>Internal IT Support:</strong> Maintaining the hardware and network infrastructure to ensure zero downtime for active classes.</li>
+                    </ul>
+                </div>
+
+                <h3 class="mt-5 mb-4">Full-Spectrum Technical Support</h3>
+                <p>Beyond development, I provided <strong>on-site IT support</strong>, troubleshooting hardware issues, managing network configurations, and ensuring that the training environment remained stable for both students and instructors.</p>
+                
+                <div class="code-snippet shadow mt-4">
+                    <span class="text-info">// Modernizing View Logic for Grand Training (BS5)</span><br>
+                    &lt;div class="row g-4"&gt;<br>
+                    &nbsp;&nbsp;&lt;?php foreach ($courses as $c): ?&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-6 col-lg-4"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Refined Bootstrap 5 Card Implementation --&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;?php endforeach; ?&gt;
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card shadow-sm border-0 p-4 bg-light mb-4">
+                    <h5 class="fw-bold">Professional Profile</h5>
+                    <hr>
+                    <p><strong>Primary Role:</strong> IT Tutor</p>
+                    <p><strong>Technical Role:</strong> Web Developer / Support</p>
+                    <p><strong>Impact:</strong> UI/UX Overhaul (2024)</p>
+                    <p><strong>Core Tech:</strong> CI3 & Bootstrap 5</p>
+                    <hr>
+                    <a href="#" class="btn btn-danger w-100 mt-2">Visit Grand Training</a>
+                </div>
+
+                <div class="card shadow-sm border-0 p-4 bg-white border-top border-4 border-danger">
+                    <h6 class="fw-bold text-danger mb-3">Teaching & Support Expertise</h6>
+                    <ul class="list-unstyled mb-0 small">
+                        <li class="mb-2"><strong>• IT Tutoring:</strong> Delivering complex tech concepts to students.</li>
+                        <li class="mb-2"><strong>• Hardware Support:</strong> PC maintenance and lab setup.</li>
+                        <li class="mb-0"><strong>• Code Migration:</strong> Porting CLC logic to new environments.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-5 bg-dark text-white text-center">
+        <p class="small mb-0">Developed by Jordan Graham | 2026 Portfolio</p>
+    </footer>
+
+</body>
+</html>
